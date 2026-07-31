@@ -81,7 +81,7 @@
             "varintValue": "3395698268"
           },
           "show_beta_tag": {
-            "boolValue": true
+            "boolValue": false
           },
           "small_hero_card": {
             "boolValue": true
@@ -188,17 +188,6 @@
       "value": true
     },
     {
-      "name": "game_1_101_distance_between_sample_points",
-      "value": true,
-      "values": {
-        "fields": {
-          "sample_point_distance": {
-            "stringValue": "2000"
-          }
-        }
-      }
-    },
-    {
       "name": "game_1_101_robopacer_timer_ui",
       "value": true
     },
@@ -211,10 +200,6 @@
     },
     {
       "name": "game_1_102_unpair_all_devices"
-    },
-    {
-      "name": "game_1_103_custom_loop_point",
-      "value": true
     },
     {
       "name": "game_1_103_fill_right_hand_rewards_page",
@@ -266,7 +251,18 @@
       "value": true
     },
     {
-      "name": "game_1_108_allow_experimental_uploading"
+      "name": "game_1_108_allow_experimental_uploading",
+      "value": true,
+      "values": {
+        "fields": {
+          "allow_mochi_uploading": {
+            "boolValue": false
+          },
+          "allow_portal_uploading": {
+            "boolValue": false
+          }
+        }
+      }
     },
     {
       "name": "game_1_108_challenge_poster_cards",
@@ -305,6 +301,9 @@
           },
           "n_bots": {
             "varintValue": "10"
+          },
+          "speed_scale": {
+            "numberValue": 2.00001
           },
           "speedscaling_enabled": {
             "boolValue": true
@@ -381,36 +380,45 @@
       "value": true
     },
     {
-      "name": "game_1_114_camera",
-      "value": true
-    },
-    {
       "name": "game_1_114_flush_structured_events",
       "value": true
     },
     {
-      "name": "game_1_114_load_routes_early",
-      "value": true
+      "name": "game_1_114_load_routes_early"
     },
     {
       "name": "game_1_114_next_up_expandable_explanation",
       "value": true
     },
     {
-      "name": "game_1_114_next_up_quest_tag"
+      "name": "game_1_114_next_up_quest_tag",
+      "value": true,
+      "values": {
+        "fields": {
+          "quest_tag_color_hex": {
+            "stringValue": "#2C2C33"
+          },
+          "quest_tag_text_color_hex": {
+            "stringValue": "#FCFCFC"
+          }
+        }
+      }
     },
     {
       "name": "game_1_115_disable_empty_leaderboard",
       "value": true
     },
     {
-      "name": "game_1_116_deprecate_wahoo_ant_burst_mode"
+      "name": "game_1_116_deprecate_wahoo_ant_burst_mode",
+      "value": true
     },
     {
-      "name": "game_1_116_lan_no_delay"
+      "name": "game_1_116_lan_no_delay",
+      "value": true
     },
     {
-      "name": "game_1_116_no_power_just_watch"
+      "name": "game_1_116_no_power_just_watch",
+      "value": true
     },
     {
       "name": "game_1_116_poll_world_list",
@@ -420,7 +428,38 @@
       "name": "game_1_116_unlimited_znet_retry"
     },
     {
-      "name": "game_1_116_use_alternate_next_up_description"
+      "name": "game_1_116_use_alternate_next_up_description",
+      "value": true
+    },
+    {
+      "name": "game_1_117_bishop_progress_report"
+    },
+    {
+      "name": "game_1_117_feature_gate_entitlements"
+    },
+    {
+      "name": "game_1_117_quest_card_countdown_ribbon"
+    },
+    {
+      "name": "game_1_117_steering_constraints_render_fix"
+    },
+    {
+      "name": "game_1_117_theater_card"
+    },
+    {
+      "name": "game_1_118_poll_user_profile_fetch",
+      "value": true
+    },
+    {
+      "name": "game_1_118_remove_stale_devices",
+      "value": true
+    },
+    {
+      "name": "game_1_118_screenshot_selector_tap_slop",
+      "value": true
+    },
+    {
+      "name": "game_1_118_wait_for_rpcs"
     },
     {
       "name": "game_1_15_assert_disable_abort",
@@ -611,8 +650,7 @@
       "value": true
     },
     {
-      "name": "game_1_43_3_ble_dll_v2",
-      "value": true
+      "name": "game_1_43_3_ble_dll_v2"
     },
     {
       "name": "game_1_43_android_road_height_fixup"
@@ -656,9 +694,6 @@
     {
       "name": "game_1_45_climb_portal_achievements",
       "value": true
-    },
-    {
-      "name": "game_1_48_show_rssi"
     },
     {
       "name": "game_1_48_tow_double_xp_routes_enabled",
@@ -783,9 +818,6 @@
       }
     },
     {
-      "name": "game_1_49_0_track_rssi"
-    },
-    {
       "name": "game_1_49_onboarding_ftp_estimation",
       "values": {
         "fields": {
@@ -841,19 +873,11 @@
       "name": "game_1_54_m0b1"
     },
     {
-      "name": "game_1_54_tdz_confetti_pattern",
-      "value": true
-    },
-    {
       "name": "game_1_55_0_workout_detail_screen_tooltips_running",
       "value": true
     },
     {
       "name": "game_1_58_0_gender_to_event_category"
-    },
-    {
-      "name": "game_1_58_steer_to_select_intersection",
-      "value": true
     },
     {
       "name": "game_1_59_queued_recommendations",
@@ -878,10 +902,6 @@
       }
     },
     {
-      "name": "game_1_64_rubberbanding_v3",
-      "value": true
-    },
-    {
       "name": "game_1_65_remove_curate_route_checkpoints",
       "value": true
     },
@@ -890,8 +910,8 @@
       "value": true,
       "values": {
         "fields": {
-          "backRepulsionPercent": {
-            "numberValue": 0.8
+          "enableMochiPackDynamics": {
+            "boolValue": false
           },
           "enabledForAllWorlds": {
             "boolValue": true
@@ -910,27 +930,6 @@
           },
           "enabledForWatopia": {
             "boolValue": true
-          },
-          "handCycleExtraHardness": {
-            "numberValue": 0.5
-          },
-          "manualSteeringExtraHardness": {
-            "numberValue": 0.0
-          },
-          "maxAvoidanceDistanceInCm": {
-            "numberValue": 600.0
-          },
-          "maxDistanceForFavoringCorrectSideInCm": {
-            "numberValue": 5.0
-          },
-          "minAvoidanceDistanceInCm": {
-            "numberValue": 200.0
-          },
-          "pillDistanceScale": {
-            "numberValue": 0.45
-          },
-          "pillHardness": {
-            "numberValue": 0.45
           }
         }
       }
@@ -938,9 +937,6 @@
     {
       "name": "game_1_66_change_pause_title_to_menu",
       "value": true
-    },
-    {
-      "name": "game_1_66_hide_transition_start_level_on_pause_screen"
     },
     {
       "name": "game_1_66_tpeaks_multiday",
@@ -981,26 +977,6 @@
       "value": true
     },
     {
-      "name": "game_1_69_last_used",
-      "value": true,
-      "values": {
-        "fields": {
-          "current_equipped_first": {
-            "boolValue": true
-          },
-          "sort_accessories": {
-            "boolValue": true
-          },
-          "ugs_enabled": {
-            "boolValue": true
-          },
-          "use_last_selected_for_config_hash": {
-            "boolValue": false
-          }
-        }
-      }
-    },
-    {
       "name": "game_1_69_missing_zc_route_completion_fix",
       "value": true
     },
@@ -1013,7 +989,7 @@
       "values": {
         "fields": {
           "challenge_carousel_id": {
-            "stringValue": "prod_home_challenge_carousel_1_114"
+            "stringValue": "prod_home_challenge_carousel_1_116"
           }
         }
       }
@@ -1242,11 +1218,21 @@
       }
     },
     {
-      "name": "game_1_92_robo_pacer_custom_skin"
-    },
-    {
-      "name": "game_1_93_ns_device_list",
-      "value": true
+      "name": "game_1_92_robo_pacer_custom_skin",
+      "value": true,
+      "values": {
+        "fields": {
+          "BodyTextureName": {
+            "stringValue": "RPBodyTourFever2026_DM.tga"
+          },
+          "GlowTextureName": {
+            "stringValue": "Glow_TourFever.tga"
+          },
+          "LimbsTextureName": {
+            "stringValue": "RPLimbsTourFever2026_DM.tga"
+          }
+        }
+      }
     },
     {
       "name": "game_1_95_allow_zc_unpairing_devices_in_connecting_state",
@@ -1285,7 +1271,8 @@
       }
     },
     {
-      "name": "game_1_98_aup"
+      "name": "game_1_98_aup",
+      "value": true
     },
     {
       "name": "game_1_98_prevent_creation_zp_controller_sensor_relay_sensor"
@@ -1428,10 +1415,19 @@
       "value": true,
       "values": {
         "fields": {
+          "CanyonAeroad_Alpecin_2026": {
+            "boolValue": true
+          },
+          "CanyonAeroad_Green_2026": {
+            "boolValue": true
+          },
           "cadex_max50_front_wheel": {
             "boolValue": true
           },
           "cadex_max50_rear_wheel": {
+            "boolValue": true
+          },
+          "canyon_speedmax_cfr_2026": {
             "boolValue": true
           },
           "cervelo_s5_2026": {
@@ -1459,6 +1455,15 @@
             "boolValue": true
           },
           "reserve_57_rear_wheel": {
+            "boolValue": true
+          },
+          "roval_rapide_clx_front_wheel": {
+            "boolValue": true
+          },
+          "roval_rapide_clx_rear_wheel": {
+            "boolValue": true
+          },
+          "specialized_tarmac_sl9_2026": {
             "boolValue": true
           },
           "supersixevo_2026": {
@@ -1519,45 +1524,18 @@
       "name": "game_button_rideon_bomb_prompt_delay"
     },
     {
-      "name": "game_camera_spill"
-    },
-    {
-      "name": "game_check_for_video_updates"
-    },
-    {
-      "name": "game_cheerful_polka_accordion2",
+      "name": "game_camera_spill",
       "value": true,
       "values": {
         "fields": {
-          "cutsj": {
-            "boolValue": true
-          },
-          "endj": {
-            "varintValue": "4890105860"
-          },
-          "intj": {
-            "boolValue": true
-          },
-          "magscalej": {
-            "numberValue": 1.0
-          },
-          "minij": {
-            "boolValue": true
-          },
-          "routej": {
-            "boolValue": true
-          },
-          "screenj": {
-            "boolValue": true
-          },
-          "startj": {
-            "varintValue": "1731427200"
-          },
-          "teleportj": {
-            "boolValue": true
+          "fence_paris": {
+            "stringValue": "release;SRAPRXRLCO"
           }
         }
       }
+    },
+    {
+      "name": "game_check_for_video_updates"
     },
     {
       "name": "game_coffeestop_early_middle_timer",
@@ -1580,7 +1558,21 @@
       "value": true
     },
     {
-      "name": "game_default_deco"
+      "name": "game_default_deco",
+      "value": true,
+      "values": {
+        "fields": {
+          "world1": {
+            "stringValue": "tourfever2026"
+          },
+          "world10": {
+            "stringValue": "tourfever2026"
+          },
+          "world11": {
+            "stringValue": "tourfever2026"
+          }
+        }
+      }
     },
     {
       "name": "game_disable_cached_subgroup_protobuf",
@@ -1607,7 +1599,7 @@
             "stringValue": "dlc_asset"
           },
           "build_id": {
-            "stringValue": "162642"
+            "stringValue": "163822"
           },
           "canary_test": {
             "boolValue": true
@@ -1658,21 +1650,8 @@
       "name": "game_enable_structured_event_proto_validation_debug_asserts"
     },
     {
-      "name": "game_end_game_session",
-      "values": {
-        "fields": {
-          "pump_network_rpc_idlewait": {
-            "boolValue": false
-          }
-        }
-      }
-    },
-    {
       "name": "game_fence_upload",
       "value": true
-    },
-    {
-      "name": "game_fireworks"
     },
     {
       "name": "game_for_you_tooltips"
@@ -1682,9 +1661,6 @@
     },
     {
       "name": "game_groupevent_join_fix"
-    },
-    {
-      "name": "game_hrm_hrv"
     },
     {
       "name": "game_hvc_telemetry"
@@ -1726,6 +1702,9 @@
           "config": {
             "stringValue": "{}"
           },
+          "entitlement_mode": {
+            "stringValue": "core"
+          },
           "manifest": {
             "stringValue": "{}"
           },
@@ -1737,6 +1716,9 @@
           },
           "showDLCTab": {
             "boolValue": false
+          },
+          "tidy_streaming": {
+            "boolValue": true
           },
           "use_parallel_download": {
             "boolValue": true
@@ -1869,7 +1851,7 @@
       "values": {
         "fields": {
           "version": {
-            "stringValue": "1.116.0"
+            "stringValue": "1.118.0"
           }
         }
       }
@@ -1919,13 +1901,6 @@
     },
     {
       "name": "game_tbs_2025_package"
-    },
-    {
-      "name": "game_tdz_2025_package"
-    },
-    {
-      "name": "game_tdz_2025_package_fw",
-      "value": true
     },
     {
       "name": "game_templated_event_decor"
@@ -2044,14 +2019,21 @@
       "name": "game_zop"
     },
     {
-      "name": "garage_item_manager"
+      "name": "garage_item_manager",
+      "value": true,
+      "values": {
+        "fields": {
+          "bRememberLastEquippedWheel": {
+            "boolValue": false
+          },
+          "bRememberSavedPaintHue": {
+            "boolValue": true
+          }
+        }
+      }
     },
     {
       "name": "gfx_drawinstanced",
-      "value": true
-    },
-    {
-      "name": "gfx_framebuffer_srgb",
       "value": true
     },
     {
@@ -2088,6 +2070,9 @@
           }
         }
       }
+    },
+    {
+      "name": "load_optimzied_player_models"
     },
     {
       "name": "log_ble_packets"
@@ -2136,7 +2121,8 @@
       }
     },
     {
-      "name": "quest_service_awards_xp"
+      "name": "quest_service_awards_xp",
+      "value": true
     },
     {
       "name": "quest_stage_cards",

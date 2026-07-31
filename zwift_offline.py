@@ -152,8 +152,7 @@ with warnings.catch_warnings():
 
 from tokens import *
 
-# Android uses https for cdn
-app = Flask(__name__, static_folder='%s/cdn/gameassets' % SCRIPT_DIR, static_url_path='/gameassets', template_folder='%s/cdn/static/web/launcher' % SCRIPT_DIR)
+app = Flask(__name__, static_folder='%s/cdn/static' % SCRIPT_DIR, template_folder='%s/cdn/static/web/launcher' % SCRIPT_DIR)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///{db}'.format(db=DATABASE_PATH)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 if not os.path.exists(SECRET_KEY_FILE):
@@ -1648,6 +1647,7 @@ def api_clubs_club_my_clubs_summary():
 @app.route('/api/game-asset-patching-service/manifest', methods=['GET'])
 @app.route('/api/workout/progress', methods=['POST'])
 @app.route('/api/power-curve/power-profile/proto', methods=['GET'])
+@app.route('/api/achievement/route-completion-achievements', methods=['GET'])  # TODO
 def api_proto_empty():
     return '', 200
 
@@ -2004,19 +2004,16 @@ def api_zfiles_delete(file_id):
 def custom_style(filename):
     return send_from_directory('%s/cdn/style' % SCRIPT_DIR, filename)
 
-@app.route('/static/web/launcher/<path:filename>')
-def static_web_launcher(filename):
-    return send_from_directory('%s/cdn/static/web/launcher' % SCRIPT_DIR, filename)
 
 @app.route('/app/<path:filename>')
 def cdn_app(filename):
     return send_from_directory('%s/cdn/app' % SCRIPT_DIR, filename)
 
-# Android uses https for schedules, redirect to http to enable proxy
-@app.route('/gameassets/MapSchedule_v2.xml')
-@app.route('/gameassets/PortalRoadSchedule_v1.xml')
-def gameassets_schedule():
-    return redirect('http://cdn.zwift.com%s' % request.path)
+
+# Launcher 1.1.17 uses https for gameassets, redirect to http to enable proxy
+@app.route('/gameassets/<path:filename>')
+def gameassets(filename):
+    return redirect('http://cdn.zwift.com/gameassets/%s' % filename)
 
 
 @app.route('/api/telemetry/config', methods=['GET'])
@@ -4704,6 +4701,16 @@ def start_zwift():
     return redirect("/ride", 302)
 
 
+class CleanWSGIServer(WSGIServer):
+    def wrap_socket_and_handle(self, client_socket, address):
+        try:
+            super().wrap_socket_and_handle(client_socket, address)
+        except ssl.SSLError:
+            pass  # Suppress log spam caused by Launcher 1.1.17
+        except ConnectionResetError:
+            logger.warning('WSGIServer: connection reset by client (missing certificate in cacert.pem?)')
+
+
 def run_standalone(passed_online, passed_global_relay, passed_global_pace_partners, passed_global_bots, passed_global_ghosts, passed_regroup_ghosts, passed_discord):
     global online
     global global_relay
@@ -4761,7 +4768,7 @@ def run_standalone(passed_online, passed_global_relay, passed_global_pace_partne
     cert_kwargs = {'certfile': '%s/cert-zwift-com.pem' % SSL_DIR, 'keyfile': '%s/key-zwift-com.pem' % SSL_DIR}
     if not use_cert:
         cert_kwargs = {}
-    server = WSGIServer((host, port), app, log=logger, **cert_kwargs)
+    server = CleanWSGIServer((host, port), app, log=logger, **cert_kwargs)
     server.serve_forever()
 
 #    app.run(ssl_context=('%s/cert-zwift-com.pem' % SSL_DIR, '%s/key-zwift-com.pem' % SSL_DIR), port=443, threaded=True, host=SERVER_HOST) # debug=True, use_reload=False)

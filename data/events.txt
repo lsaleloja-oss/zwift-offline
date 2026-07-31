@@ -133,16 +133,16 @@
     "sport": 0
   },
   {
-    "name": "Makuri Islands - Neokyo Crit Course",
-    "route": 1127056801,
-    "distance": 4660.0,
+    "name": "Makuri Islands - Mech Isle Mayhem",
+    "route": 2919739330,
+    "distance": 18422.6,
     "course": 13,
     "sport": 0
   },
   {
-    "name": "Makuri Islands - Roundikaze",
-    "route": 2919739330,
-    "distance": 18422.6,
+    "name": "Makuri Islands - Neokyo Crit Course",
+    "route": 1127056801,
+    "distance": 4660.0,
     "course": 13,
     "sport": 0
   },
