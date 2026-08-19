@@ -44,26 +44,6 @@
       }
     },
     {
-      "name": "bikemodifiercalculator_params",
-      "value": true,
-      "values": {
-        "fields": {
-          "bUseDriveTrainEfficiency": {
-            "boolValue": false
-          },
-          "bUseHelmetCDA": {
-            "boolValue": false
-          },
-          "bUseSockCDA": {
-            "boolValue": true
-          },
-          "bUseTrainerSlopeScale": {
-            "boolValue": true
-          }
-        }
-      }
-    },
-    {
       "name": "download_entitlements_from_asset_cms"
     },
     {
@@ -282,10 +262,6 @@
       "name": "game_1_109_controllers_running"
     },
     {
-      "name": "game_1_109_disable_first_time_auto_pairing_and_selection",
-      "value": true
-    },
-    {
       "name": "game_1_109_gravel_mountain",
       "value": true,
       "values": {
@@ -391,18 +367,7 @@
       "value": true
     },
     {
-      "name": "game_1_114_next_up_quest_tag",
-      "value": true,
-      "values": {
-        "fields": {
-          "quest_tag_color_hex": {
-            "stringValue": "#2C2C33"
-          },
-          "quest_tag_text_color_hex": {
-            "stringValue": "#FCFCFC"
-          }
-        }
-      }
+      "name": "game_1_114_next_up_quest_tag"
     },
     {
       "name": "game_1_115_disable_empty_leaderboard",
@@ -438,13 +403,19 @@
       "name": "game_1_117_feature_gate_entitlements"
     },
     {
-      "name": "game_1_117_quest_card_countdown_ribbon"
+      "name": "game_1_117_quest_card_countdown_ribbon",
+      "value": true,
+      "values": {
+        "fields": {
+          "countdown_days_remaining_threshold": {
+            "varintValue": "7"
+          }
+        }
+      }
     },
     {
-      "name": "game_1_117_steering_constraints_render_fix"
-    },
-    {
-      "name": "game_1_117_theater_card"
+      "name": "game_1_117_steering_constraints_render_fix",
+      "value": true
     },
     {
       "name": "game_1_118_poll_user_profile_fetch",
@@ -460,6 +431,49 @@
     },
     {
       "name": "game_1_118_wait_for_rpcs"
+    },
+    {
+      "name": "game_1_119_ble_characteristic_handlers",
+      "value": true,
+      "values": {
+        "fields": {
+          "exclusions": {
+            "stringValue": ""
+          }
+        }
+      }
+    },
+    {
+      "name": "game_1_119_ble_middleware_graceful_shutdown",
+      "value": true
+    },
+    {
+      "name": "game_1_119_membership_view"
+    },
+    {
+      "name": "game_1_119_noesis_touch_drag",
+      "value": true
+    },
+    {
+      "name": "game_1_119_purge_all_devices"
+    },
+    {
+      "name": "game_1_119_zero_media_selection",
+      "value": true
+    },
+    {
+      "name": "game_1_120_android_ui_callback_async_drain",
+      "value": true
+    },
+    {
+      "name": "game_1_120_disable_r2h_sleep_aware_clock"
+    },
+    {
+      "name": "game_1_120_fitfile_recovery"
+    },
+    {
+      "name": "game_1_120_ride_leader_emoji_name_support",
+      "value": true
     },
     {
       "name": "game_1_15_assert_disable_abort",
@@ -603,7 +617,7 @@
       "values": {
         "fields": {
           "excluded_collections": {
-            "stringValue": "\"Baby On Board\""
+            "stringValue": "Baby On Board"
           }
         }
       }
@@ -650,7 +664,8 @@
       "value": true
     },
     {
-      "name": "game_1_43_3_ble_dll_v2"
+      "name": "game_1_43_3_ble_dll_v2",
+      "value": true
     },
     {
       "name": "game_1_43_android_road_height_fixup"
@@ -896,7 +911,7 @@
       "values": {
         "fields": {
           "hero_carousel_id": {
-            "stringValue": "home_page_hero_carousel_prod"
+            "stringValue": "home_page_hero_carousel_119"
           }
         }
       }
@@ -911,7 +926,7 @@
       "values": {
         "fields": {
           "enableMochiPackDynamics": {
-            "boolValue": false
+            "boolValue": true
           },
           "enabledForAllWorlds": {
             "boolValue": true
@@ -989,7 +1004,7 @@
       "values": {
         "fields": {
           "challenge_carousel_id": {
-            "stringValue": "prod_home_challenge_carousel_1_116"
+            "stringValue": "prod_home_challenge_carousel_1_119"
           }
         }
       }
@@ -1002,18 +1017,11 @@
       "value": true
     },
     {
-      "name": "game_1_72_reset_route_manager_on_logout"
-    },
-    {
       "name": "game_1_74_intersection_level_lock_override_by_route",
       "value": true
     },
     {
       "name": "game_1_75_bypass_zpe"
-    },
-    {
-      "name": "game_1_76_dont_hold_player_during_pairing_while_paused",
-      "value": true
     },
     {
       "name": "game_1_76_dpr"
@@ -1030,7 +1038,8 @@
       }
     },
     {
-      "name": "game_1_77_prevent_teleport_to_player_type"
+      "name": "game_1_77_prevent_teleport_to_player_type",
+      "value": true
     },
     {
       "name": "game_1_77_ttt_team_car_shows_znl_when_fanviewing",
@@ -1218,21 +1227,7 @@
       }
     },
     {
-      "name": "game_1_92_robo_pacer_custom_skin",
-      "value": true,
-      "values": {
-        "fields": {
-          "BodyTextureName": {
-            "stringValue": "RPBodyTourFever2026_DM.tga"
-          },
-          "GlowTextureName": {
-            "stringValue": "Glow_TourFever.tga"
-          },
-          "LimbsTextureName": {
-            "stringValue": "RPLimbsTourFever2026_DM.tga"
-          }
-        }
-      }
+      "name": "game_1_92_robo_pacer_custom_skin"
     },
     {
       "name": "game_1_95_allow_zc_unpairing_devices_in_connecting_state",
@@ -1240,10 +1235,6 @@
     },
     {
       "name": "game_1_95_post_recommended_activity_survey"
-    },
-    {
-      "name": "game_1_95_prevent_pairing_of_already_paired_ble_devices",
-      "value": true
     },
     {
       "name": "game_1_96_info_highlight",
@@ -1293,17 +1284,6 @@
       "values": {
         "fields": {
           "sendStayOnCourseAnalytics": {
-            "boolValue": true
-          }
-        }
-      }
-    },
-    {
-      "name": "game_1_99_power_segment_arch",
-      "value": true,
-      "values": {
-        "fields": {
-          "lightning_effect": {
             "boolValue": true
           }
         }
@@ -1418,6 +1398,9 @@
           "CanyonAeroad_Alpecin_2026": {
             "boolValue": true
           },
+          "CanyonAeroad_CS_2026": {
+            "boolValue": true
+          },
           "CanyonAeroad_Green_2026": {
             "boolValue": true
           },
@@ -1463,6 +1446,30 @@
           "roval_rapide_clx_rear_wheel": {
             "boolValue": true
           },
+          "shimano_duraace_c362026_front_wheel": {
+            "boolValue": true
+          },
+          "shimano_duraace_c362026_rear_wheel": {
+            "boolValue": true
+          },
+          "shimano_duraace_c502026_front_wheel": {
+            "boolValue": true
+          },
+          "shimano_duraace_c502026_rear_wheel": {
+            "boolValue": true
+          },
+          "shimano_duraace_c602026_front_wheel": {
+            "boolValue": true
+          },
+          "shimano_duraace_c602026_rear_wheel": {
+            "boolValue": true
+          },
+          "shimano_duraace_c992026_front_wheel": {
+            "boolValue": true
+          },
+          "shimano_duraace_c992026_rear_wheel": {
+            "boolValue": true
+          },
           "specialized_tarmac_sl9_2026": {
             "boolValue": true
           },
@@ -1470,6 +1477,9 @@
             "boolValue": true
           },
           "wilier_filante_2026": {
+            "boolValue": true
+          },
+          "wilier_psg_2026": {
             "boolValue": true
           }
         }
@@ -1481,9 +1491,6 @@
     {
       "name": "game_aeroribbon",
       "value": true
-    },
-    {
-      "name": "game_allow_bc1_memfault_reporting"
     },
     {
       "name": "game_alpe_du_zwift_prize_wheel_override",
@@ -1558,21 +1565,7 @@
       "value": true
     },
     {
-      "name": "game_default_deco",
-      "value": true,
-      "values": {
-        "fields": {
-          "world1": {
-            "stringValue": "tourfever2026"
-          },
-          "world10": {
-            "stringValue": "tourfever2026"
-          },
-          "world11": {
-            "stringValue": "tourfever2026"
-          }
-        }
-      }
+      "name": "game_default_deco"
     },
     {
       "name": "game_disable_cached_subgroup_protobuf",
@@ -1599,7 +1592,7 @@
             "stringValue": "dlc_asset"
           },
           "build_id": {
-            "stringValue": "163822"
+            "stringValue": "164644"
           },
           "canary_test": {
             "boolValue": true
@@ -1666,7 +1659,8 @@
       "name": "game_hvc_telemetry"
     },
     {
-      "name": "game_instrumental_rock_bass"
+      "name": "game_instrumental_rock_bass",
+      "value": true
     },
     {
       "name": "game_lauterbrunnen"
@@ -1737,20 +1731,6 @@
       "value": true
     },
     {
-      "name": "game_off_route_path_prediction",
-      "value": true,
-      "values": {
-        "fields": {
-          "center": {
-            "boolValue": true
-          },
-          "minimap": {
-            "boolValue": true
-          }
-        }
-      }
-    },
-    {
       "name": "game_os_deprecation_warning",
       "value": true,
       "values": {
@@ -1763,6 +1743,9 @@
           }
         }
       }
+    },
+    {
+      "name": "game_patch_noesis_loc"
     },
     {
       "name": "game_prize_wheel_schedule",
@@ -1839,8 +1822,7 @@
       }
     },
     {
-      "name": "game_road_graph_in_game",
-      "value": true
+      "name": "game_quest_banner"
     },
     {
       "name": "game_road_graph_on_route_in_game"
@@ -1851,7 +1833,7 @@
       "values": {
         "fields": {
           "version": {
-            "stringValue": "1.118.0"
+            "stringValue": "1.120.0"
           }
         }
       }
@@ -1861,17 +1843,6 @@
     },
     {
       "name": "game_sentry_screenshot_capture"
-    },
-    {
-      "name": "game_session_data",
-      "value": true,
-      "values": {
-        "fields": {
-          "ride_session_state": {
-            "boolValue": true
-          }
-        }
-      }
     },
     {
       "name": "game_show_about_menu",
@@ -2024,7 +1995,7 @@
       "values": {
         "fields": {
           "bRememberLastEquippedWheel": {
-            "boolValue": false
+            "boolValue": true
           },
           "bRememberSavedPaintHue": {
             "boolValue": true
@@ -2141,6 +2112,10 @@
           }
         }
       }
+    },
+    {
+      "name": "segment_complete_event",
+      "value": true
     },
     {
       "name": "unload_homescreen_before_game_load",
