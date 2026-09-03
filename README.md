@@ -1,7 +1,7 @@
 > [!WARNING]
 > This fork contains changes to run as a system service on Oracle Cloud. Refer to [this wiki page](https://github.com/oldnapalm/zwift-offline/wiki/Creating-a-server-on-Oracle-Cloud-Free-Tier) for more details.
->
-> Zoffline 1.0.164452 Compatible for Zwift v1.120 tested by Windows 11 Pro 25h2
+
+Zoffline 1.0.164452 Compatible for Zwift v1.120 tested by Windows 11 Pro 25h2
 
 Zoffline Windows only standalone executable for Zwift 1.0.164452 (1.120.0)
 
