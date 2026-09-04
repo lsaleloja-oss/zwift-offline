@@ -1,16 +1,19 @@
-# zwift-offline - Fork Ativo 2026 | lsaleloja-oss
+# zwift-offline - Active Fork 2026 | lsaleloja-oss
 
-> **Fork ativo e atualizado do zoffline/zwift-offline** (original arquivado). 
-> Testado com Zwift v1.120 (19/08/2026) - Windows 11, Linux Docker e Oracle Cloud Free Tier.
+> **Active, maintained fork of zoffline/zwift-offline (original is archived).**
+> Tested with Zwift v1.120 (Aug 19, 2026) - Windows 11 Pro 25H2, Linux, Docker & Oracle Cloud Free Tier.
 
-Compatível com Zoffline 1.0.164452. Executável standalone Windows incluso.
+**Zoffline 1.0.164452 Compatible - Windows Standalone .exe for Zwift 1.120.0 included.**
 
-**O que tem de novo neste fork:**
-- Suporte a rodar como serviço no Oracle Cloud (ver Wiki)
-- Update para Zwift 1.120 - 19/08/2026
-- Exe atualizado via PyInstaller (pode dar falso positivo no antivírus)
+### What's new in this fork (lsaleloja-oss)
+- **Aug 19, 2026 UPDATE:** Verified with Zwift 1.120
+- Runs as a system service on Oracle Cloud Free Tier - [Wiki Guide](https://github.com/oldnapalm/zwift-offline/wiki/Creating-a-server-on-Oracle-Cloud-Free-Tier)
+- Updated Docker image: `ghcr.io/lsaleloja-oss/zwift-offline`
+- PyInstaller exe rebuilt (antivirus may flag it as false positive - run from source if you prefer)
 
-Original: https://github.com/zoffline/zwift-offline
+Original project: https://github.com/zoffline/zwift-offline
+
+<img width="655" height="696" alt="Zwift Offline Screenshot" src="https://github.com/user-attachments/assets/ec670941-9aba-4b4d-8437-02a3d1f26f70" />
 
 UPDATE ZWIFT: 19/08/2026
 
