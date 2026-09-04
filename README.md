@@ -15,10 +15,6 @@ Original project: https://github.com/zoffline/zwift-offline
 
 <img width="655" height="696" alt="Zwift Offline Screenshot" src="https://github.com/user-attachments/assets/ec670941-9aba-4b4d-8437-02a3d1f26f70" />
 
-UPDATE ZWIFT: 19/08/2026
-
-<img width="655" height="696" alt="Captura de ecrã 2026-09-04 045401" src="https://github.com/user-attachments/assets/ec670941-9aba-4b4d-8437-02a3d1f26f70" />
-
 # zoffline
 
 zoffline enables the use of [Zwift](http://zwift.com) offline by acting as a partial implementation of a Zwift server. By default zoffline is only for a single player. See [Step 6: Enable Multiplayer](#step-6-optional-enable-multiplayer) for how to enable support for multiple users/profiles.
